@@ -1,51 +1,60 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+
+import { FaExternalLinkAlt } from "react-icons/fa";
+
 import {
-  Github,
-  Twitter,
-  Youtube,
-  Mail,
-  Globe,
-  ExternalLink,
-} from "lucide-react";
+  FaBluesky,
+  FaGlobe,
+  FaYoutube,
+  FaGithub,
+  FaTwitter,
+} from "react-icons/fa6";
+import { CiMail } from "react-icons/ci";
 
 export default function Component() {
   const socialLinks = [
     {
       name: "Website",
       url: "https://valzzu.xyz",
-      icon: Globe,
+      icon: FaGlobe,
       color: "bg-slate-600 hover:bg-slate-700",
     },
     {
       name: "3d printing",
       url: "https://valzzu3d.fi",
-      icon: Globe,
+      icon: FaGlobe,
       color: "bg-slate-600 hover:bg-slate-700",
     },
     {
       name: "GitHub",
       url: "https://github.com/valzzu",
-      icon: Github,
+      icon: FaGithub,
       color: "bg-gray-800 hover:bg-gray-900",
     },
     {
       name: "Twitter",
       url: "https://twitter.com/ValzzuG",
-      icon: Twitter,
+      icon: FaTwitter,
+      color: "bg-blue-500 hover:bg-blue-600",
+    },
+    {
+      name: "Bluesky",
+      url: "https://bsky.app/profile/valzzu.xyz",
+      icon: FaBluesky,
       color: "bg-blue-500 hover:bg-blue-600",
     },
     {
       name: "YouTube",
       url: "https://youtube.com/@valzzu",
-      icon: Youtube,
+      icon: FaYoutube,
       color: "bg-red-600 hover:bg-red-700",
     },
     {
       name: "Email",
       url: "mailto:contact@valzzu.xyz",
-      icon: Mail,
+      icon: CiMail,
       color: "bg-green-600 hover:bg-green-700",
     },
   ];
@@ -72,7 +81,7 @@ export default function Component() {
               The wannabe sysamin who loves to play with electronics.
             </p>
             <div className="flex items-center justify-center text-sm text-gray-500">
-              <Globe className="w-4 h-4 mr-1" />
+              <FaGlobe className="w-4 h-4 mr-1" />
               Finland
             </div>
           </CardContent>
@@ -96,7 +105,7 @@ export default function Component() {
                 >
                   <IconComponent className="w-5 h-5" />
                   {link.name}
-                  <ExternalLink className="w-4 h-4 ml-auto opacity-70" />
+                  <FaExternalLinkAlt className="w-4 h-4 ml-auto opacity-70" />
                 </a>
               </Button>
             );
