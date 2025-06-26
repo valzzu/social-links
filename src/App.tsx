@@ -119,7 +119,7 @@ export default function Component() {
               Iris (valzzu)
             </h1>
             <p className="text-gray-500 mb-4">
-              The wannabe sysamin who loves to play with electronics.
+              The wannabe sysadmin who loves to play with electronics.
             </p>
             <div className="flex items-center justify-center text-sm text-gray-500">
               <FaGlobe className="w-4 h-4 mr-1" />
