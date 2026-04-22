@@ -29,13 +29,6 @@ export default function Component() {
       size: "14px",
     },
     {
-      name: "3d printing",
-      url: "https://valzzu3d.fi",
-      icon: FaGlobe,
-      color: "bg-slate-600 hover:bg-slate-700",
-      size: "14px",
-    },
-    {
       name: "GitHub",
       url: "https://github.com/valzzu",
       icon: FaGithub,
