@@ -65,7 +65,7 @@ export default function Component() {
     },
     {
       name: "Discord",
-      url: "https://discord.gg/6wTg2nEmSz",
+      url: "https://discord.gg/dvT8SYZqyf",
       icon: FaDiscord,
       color: "bg-[#5865F2] hover:bg-[#5352f0]",
       size: "14px",
